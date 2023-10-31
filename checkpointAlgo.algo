@@ -1,0 +1,23 @@
+ALGORITHM checkpiont
+VAR
+    x : CHAR;
+    cc,cw,cv : INTEGER;
+BEGIN
+    REPEAT
+        write("donner un char");
+        read(x);*
+        cc := cc + 1;
+
+        IF (x = ' ') THEN
+            cw := cw + 1;
+        END_IF
+        
+        IF (x = 'A' or x = 'O' x = 'E' x = 'U' x = 'I' x = 'Y' x = 'a' x = 'o' x = 'e'x = 'u' x = 'i' x = 'y') THEN
+            cv := cv +1;
+        END_IF
+    UNTIL (x='.')
+    write("le nombre de car est", cc);
+    write("le nombre de word est", cw+1);
+    write("le nombre de voy",cv);
+
+END
